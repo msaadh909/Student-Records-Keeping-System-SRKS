@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		566EFB01282B4DA200D7C2BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566EFB00282B4DA200D7C2BF /* main.cpp */; };
+		566EFB1C282B639100D7C2BF /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566EFB16282B52A700D7C2BF /* Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,11 @@
 /* Begin PBXFileReference section */
 		566EFAFD282B4DA200D7C2BF /* Student-Records-Keeping-System-SRKS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Student-Records-Keeping-System-SRKS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EFB00282B4DA200D7C2BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		566EFB13282B504000D7C2BF /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		566EFB14282B504000D7C2BF /* App.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = App.hpp; sourceTree = "<group>"; };
+		566EFB16282B52A700D7C2BF /* Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
+		566EFB17282B52A700D7C2BF /* Test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
+		566EFB19282B5BEF00D7C2BF /* Test2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,46 @@
 		566EFAFF282B4DA200D7C2BF /* Student-Records-Keeping-System-SRKS */ = {
 			isa = PBXGroup;
 			children = (
+				566EFB0E282B4EC200D7C2BF /* storage */,
+				566EFB0D282B4E7A00D7C2BF /* src */,
+				566EFB0C282B4E6B00D7C2BF /* include */,
+				566EFB0B282B4E5700D7C2BF /* lib */,
 				566EFB00282B4DA200D7C2BF /* main.cpp */,
+				566EFB19282B5BEF00D7C2BF /* Test2.cpp */,
+				566EFB16282B52A700D7C2BF /* Test.cpp */,
+				566EFB17282B52A700D7C2BF /* Test.hpp */,
 			);
 			path = "Student-Records-Keeping-System-SRKS";
+			sourceTree = "<group>";
+		};
+		566EFB0B282B4E5700D7C2BF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		566EFB0C282B4E6B00D7C2BF /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		566EFB0D282B4E7A00D7C2BF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				566EFB13282B504000D7C2BF /* App.cpp */,
+				566EFB14282B504000D7C2BF /* App.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		566EFB0E282B4EC200D7C2BF /* storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566EFB1C282B639100D7C2BF /* Test.cpp in Sources */,
 				566EFB01282B4DA200D7C2BF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
