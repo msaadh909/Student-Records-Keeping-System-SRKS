@@ -6,10 +6,18 @@
 //
 
 #include <iostream>
-#include "Test.hpp"
+#include "./include/index.cpp"
+#include "Test.cpp"
 #include "Test2.cpp"
 
-int main(int argc, const char * argv[]) {
+int main()
+{
+    system("cls");
+
+    Student student;
+    cout << student.GetStudentCGPA() << endl;
+    cout << student.GetStudentName() << endl;
+    Courses courses;
     Test();
     Test2();
     return 0;
