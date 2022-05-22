@@ -12,5 +12,8 @@ using namespace std;
 
 void Test() {
     cout << "Test function" << endl;
+}
 
+void Test2() {
+    cout << "new Test2 function" << endl;
 }

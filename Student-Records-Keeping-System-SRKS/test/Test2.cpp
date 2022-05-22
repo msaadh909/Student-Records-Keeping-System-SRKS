@@ -5,6 +5,7 @@
 //  Created by Saad Hassan on 5/11/22.
 //
 
+#include "Test.hpp"
 #include <stdio.h>
 
 void Test2() {

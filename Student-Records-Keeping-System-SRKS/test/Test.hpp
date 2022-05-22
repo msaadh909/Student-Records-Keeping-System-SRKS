@@ -9,5 +9,6 @@
 #define Test_hpp
 
 void Test();
+void Test2();
 
 #endif /* Test_hpp */

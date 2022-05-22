@@ -1,36 +1,34 @@
+//
+//  Student.cpp
+//  Student-Records-Keeping-System-SRKS
+//
+//  Created by Saad Hassan on 5/15/22.
+//
+
 #include <iostream>
+#include "../model/StudentModel.cpp"
 
 using namespace std;
 
 class Student
 {
-private:
-    float cgpa = 12.5;
+    StudentModel student_model;
 
 public:
-    string name = "saad";
-    int id;
-    Student(/* args */);
-    string GetStudentName();
-    float GetStudentCGPA();
-    ~Student();
+    Student()
+    {
+        // cout << "> Student" << endl;
+    }
+    // ~Student()
+    // {
+    //     cout << "this is distructor Student class" << endl;
+    // }
+    void store()
+    {
+        student_model.create();
+    }
+    void GetStudentName()
+    {
+        cout << "Student name : saad" << endl;
+    }
 };
-
-Student::Student(/* args */)
-{
-    cout << "Class Student : OBJ" << endl;
-}
-
-string Student::GetStudentName()
-{
-    return this->name;
-}
-
-float Student::GetStudentCGPA()
-{
-    return this->cgpa;
-}
-
-Student::~Student()
-{
-}
