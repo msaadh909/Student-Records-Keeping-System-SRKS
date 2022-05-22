@@ -9,6 +9,6 @@ void App()
 {
     // Auth();
     Student student;
-    student.store();
-    // student.fetch();
+    // student.store();
+    student.fetch();
 }
