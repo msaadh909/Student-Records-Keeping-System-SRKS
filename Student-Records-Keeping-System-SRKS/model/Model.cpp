@@ -12,7 +12,7 @@ protected:
     string dif_file;
     int no_data_fields;
     vector<string> data_fields;
-    string data_fields[0], data[0];
+    string data[0];
 
     void setDirFile(string table)
     {
@@ -30,7 +30,7 @@ public:
     Model()
     {
         // cout << "> Model" << endl;
-        string data_fields[no_data_fields];
+        // string data_fields[no_data_fields];
         string data[no_data_fields];
     }
     void count()
