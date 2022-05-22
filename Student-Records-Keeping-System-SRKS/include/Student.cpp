@@ -1,29 +1,18 @@
-//
-//  Student.cpp
-//  Student-Records-Keeping-System-SRKS
-//
-//  Created by Saad Hassan on 5/15/22.
-//
-
 #include <iostream>
+// #include "../lib/src/Auth.cpp"
 #include "../model/StudentModel.cpp"
 
 using namespace std;
 
 class Student
 {
-    StudentModel student_model;
-
 public:
+    StudentModel student_model;
     int x;
     Student()
     {
-        cout << "> Student" << endl;
+        // cout << "> Student" << endl;
     }
-    // ~Student()
-    // {
-    //     cout << "this is distructor Student class" << endl;
-    // }
     void fetch()
     {
         cout << "Student::fetch()" << endl;
@@ -70,7 +59,7 @@ public:
         // cout << "X: " << x << endl;
 
     jump_action:
-        cout << "Please Enter a number which action you want to do." << endl
+        cout << "Please Enter a number" << endl
              << "1.  Logout" << endl
              << "2.  Show Leaves" << endl
              << "3.  Add Leaves" << endl
@@ -80,13 +69,14 @@ public:
              << "7.  Add Timetable" << endl
              << "8.  Show Fee" << endl
              << "9.  Add Fee" << endl
-             << "10.  Show Fee" << endl
+             << "10. Show Fee" << endl
              << "11. Add Fee" << endl
              << "12. Show Fee" << endl
              << "13. Add Fee" << endl
              << "14. Edit Student" << endl
              << "15. Delete Student" << endl
-             << "16. Export Student Detail" << endl;
+             << "16. Export Student Detail" << endl
+             << "Which action you want to do: ";
 
         cin >> action;
 
@@ -98,7 +88,7 @@ public:
         switch (action)
         {
         case 1:
-            cout << "1.  Logout" << endl;
+            cout << "1.  log" << endl;
             break;
         case 2:
             cout << "2.  Show Leaves" << endl;

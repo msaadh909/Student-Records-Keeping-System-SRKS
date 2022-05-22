@@ -1,3 +1,4 @@
+#include "Model.hpp"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -25,11 +26,6 @@ protected:
 private:
     /* data */
 public:
-    Model()
-    {
-        // cout << "Model()" << endl;
-    }
-
     void count()
     {
         cout << 200 << endl;
