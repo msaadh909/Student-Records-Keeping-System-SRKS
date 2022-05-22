@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
+#include <sstream>
 
 using namespace std;
 
@@ -9,6 +11,7 @@ class Model
 protected:
     string dif_file;
     int no_data_fields;
+    vector<string> data_fields;
     string data_fields[0], data[0];
 
     void setDirFile(string table)
@@ -34,26 +37,53 @@ public:
     {
         cout << 200 << endl;
     }
+    void get()
+    {
+        cout << "Model::get()" << endl;
+        // Create a text string, which is used to output the text file
+        string myText;
+
+        // Read from the text file
+        ifstream MyReadFile(dif_file);
+
+        // Use a while loop together with the getline() function to read the file line by line
+        while (getline(MyReadFile, myText))
+        {
+            // Output the text from the file
+            cout << myText;
+        }
+
+        // Close the file
+        MyReadFile.close();
+    }
     void create()
     {
-        // file pointer
-        fstream fout;
+        cout << "Model::create()" << endl;
 
-        // opens an existing file or creates a new file.
-        fout.open(dif_file, ios::out | ios::app);
-
-        for (int i = 0; i < no_data_fields; i++)
+        if (data_fields.empty() == false)
         {
-            cout << "Enter " << data_fields[i] << ": ";
-            cin >> data[i];
-        }
+            // file pointer
+            fstream fout;
 
-        // Insert the data to file
-        for (int i = 0; i < no_data_fields; i++)
-        {
-            fout << data[i] << ", ";
-        }
+            // opens an existing file or creates a new file.
+            fout.open(dif_file, ios::out | ios::app);
 
-        fout << "\n";
+            // for (auto field = data_fields.begin(); field != data_fields.end(); field++)
+            // {
+            //     cout << *field << " ";
+            //     cout << "Enter " << *field << ": ";
+            //     cin >> data[i];
+            //     fout << data[i] << ",";
+            // }
+
+            for (int i = 0; i < data_fields.size(); i++)
+            {
+                cout << "Enter " << data_fields[i] << ": ";
+                cin >> data[i];
+                fout << data[i] << ",";
+            }
+
+            fout << "\n";
+        }
     }
 };

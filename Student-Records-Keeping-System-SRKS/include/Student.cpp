@@ -17,12 +17,17 @@ class Student
 public:
     Student()
     {
-        // cout << "> Student" << endl;
+        cout << "> Student" << endl;
     }
     // ~Student()
     // {
     //     cout << "this is distructor Student class" << endl;
     // }
+    void fetch()
+    {
+        cout << "fetch()" << endl;
+        student_model.get();
+    }
     void store()
     {
         student_model.create();
