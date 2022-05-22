@@ -6,7 +6,6 @@ using namespace std;
 
 void App()
 {
-    //    StudentModel student_model;
     Student student;
     student.store();
 }
