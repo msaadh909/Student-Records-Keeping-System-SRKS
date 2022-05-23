@@ -24,3 +24,4 @@ void Auth(bool logout)
         Auth();
     }
 }
+

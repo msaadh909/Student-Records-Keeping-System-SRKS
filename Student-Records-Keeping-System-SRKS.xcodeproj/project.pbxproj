@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		566EFB01282B4DA200D7C2BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566EFB00282B4DA200D7C2BF /* main.cpp */; };
-		56BC61AA2834C677003F6ED2 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56BC61A92834C676003F6ED2 /* Model.cpp */; };
-		56D88FBE283060B700CAD04E /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56D88FBD283060B700CAD04E /* Student.cpp */; };
-		56D88FC428308CE200CAD04E /* StudentModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56D88FC328308CE200CAD04E /* StudentModel.cpp */; };
+		5641002A283B07C500E4162E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566EFB00282B4DA200D7C2BF /* main.cpp */; };
+		5641002D283B08F900E4162E /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5641002B283B08F900E4162E /* Model.cpp */; };
+		5641002F283B094800E4162E /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5641002E283B094800E4162E /* Course.cpp */; };
+		56410031283B099000E4162E /* CourseModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410030283B099000E4162E /* CourseModel.cpp */; };
+		56410035283B0A0E00E4162E /* ProgramModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410034283B0A0E00E4162E /* ProgramModel.cpp */; };
+		56410037283B0A8600E4162E /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410036283B0A8600E4162E /* login.cpp */; };
+		56410039283B0B0F00E4162E /* welcome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410038283B0B0F00E4162E /* welcome.cpp */; };
+		56410041283B0C0900E4162E /* Auth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5641003F283B0C0900E4162E /* Auth.cpp */; };
+		56410043283B0D3A00E4162E /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410042283B0D3A00E4162E /* Program.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,13 +31,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5641002B283B08F900E4162E /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		5641002C283B08F900E4162E /* Model.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		5641002E283B094800E4162E /* Course.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Course.cpp; path = "Student-Records-Keeping-System-SRKS/src/Course.cpp"; sourceTree = SOURCE_ROOT; };
+		56410030283B099000E4162E /* CourseModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CourseModel.cpp; sourceTree = "<group>"; };
+		56410034283B0A0E00E4162E /* ProgramModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramModel.cpp; sourceTree = "<group>"; };
+		56410036283B0A8600E4162E /* login.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = login.cpp; sourceTree = "<group>"; };
+		56410038283B0B0F00E4162E /* welcome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = welcome.cpp; sourceTree = "<group>"; };
+		5641003F283B0C0900E4162E /* Auth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Auth.cpp; sourceTree = "<group>"; };
+		56410042283B0D3A00E4162E /* Program.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = SOURCE_ROOT; };
 		566EFAFD282B4DA200D7C2BF /* Student-Records-Keeping-System-SRKS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Student-Records-Keeping-System-SRKS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EFB00282B4DA200D7C2BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		566EFB13282B504000D7C2BF /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
 		566EFB16282B52A700D7C2BF /* Test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		566EFB17282B52A700D7C2BF /* Test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Test.hpp; sourceTree = "<group>"; };
 		566EFB19282B5BEF00D7C2BF /* Test2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Test2.cpp; sourceTree = "<group>"; };
-		56BC61A92834C676003F6ED2 /* Model.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
 		56D88FBD283060B700CAD04E /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
 		56D88FC02830652F00CAD04E /* unit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unit.cpp; sourceTree = "<group>"; };
 		56D88FC328308CE200CAD04E /* StudentModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentModel.cpp; sourceTree = "<group>"; };
@@ -49,6 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5641003D283B0BBE00E4162E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5641003F283B0C0900E4162E /* Auth.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5641003E283B0BCF00E4162E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				56410036283B0A8600E4162E /* login.cpp */,
+				56410038283B0B0F00E4162E /* welcome.cpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		566EFAF4282B4DA200D7C2BF = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +112,8 @@
 		566EFB0B282B4E5700D7C2BF /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				5641003E283B0BCF00E4162E /* include */,
+				5641003D283B0BBE00E4162E /* src */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -89,6 +121,8 @@
 		566EFB0C282B4E6B00D7C2BF /* include */ = {
 			isa = PBXGroup;
 			children = (
+				56410042283B0D3A00E4162E /* Program.cpp */,
+				5641002E283B094800E4162E /* Course.cpp */,
 				56D88FBD283060B700CAD04E /* Student.cpp */,
 			);
 			path = include;
@@ -113,7 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				56D88FC328308CE200CAD04E /* StudentModel.cpp */,
-				56BC61A92834C676003F6ED2 /* Model.cpp */,
+				5641002B283B08F900E4162E /* Model.cpp */,
+				5641002C283B08F900E4162E /* Model.hpp */,
+				56410030283B099000E4162E /* CourseModel.cpp */,
+				56410034283B0A0E00E4162E /* ProgramModel.cpp */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -186,10 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D88FC428308CE200CAD04E /* StudentModel.cpp in Sources */,
-				56D88FBE283060B700CAD04E /* Student.cpp in Sources */,
-				566EFB01282B4DA200D7C2BF /* main.cpp in Sources */,
-				56BC61AA2834C677003F6ED2 /* Model.cpp in Sources */,
+				56410041283B0C0900E4162E /* Auth.cpp in Sources */,
+				56410039283B0B0F00E4162E /* welcome.cpp in Sources */,
+				5641002A283B07C500E4162E /* main.cpp in Sources */,
+				56410043283B0D3A00E4162E /* Program.cpp in Sources */,
+				56410035283B0A0E00E4162E /* ProgramModel.cpp in Sources */,
+				56410037283B0A8600E4162E /* login.cpp in Sources */,
+				5641002D283B08F900E4162E /* Model.cpp in Sources */,
+				56410031283B099000E4162E /* CourseModel.cpp in Sources */,
+				5641002F283B094800E4162E /* Course.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

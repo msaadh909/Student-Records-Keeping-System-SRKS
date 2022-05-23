@@ -2,7 +2,7 @@
 #include <string>
 #include "../lib/src/Auth.cpp"
 #include "../include/Student.cpp"
-#include "../include/Program.cpp"
+// #include "../include/Program.cpp"
 // #include "../include/Course.cpp"
 
 using namespace std;
@@ -33,7 +33,7 @@ jump_feature:
     }
 
     Student student;
-    Program program;
+    // Program program;
     // Course course;
 
     switch (feature)

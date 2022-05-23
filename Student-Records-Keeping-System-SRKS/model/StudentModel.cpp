@@ -1,12 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
-// #include "Model.cpp"
-#include "Model.hpp"
+#include "Model.cpp"
 
 using namespace std;
 
-class StudentModel : virtual public Model
+class StudentModel : public Model
 {
 protected:
     string table;
@@ -18,19 +17,19 @@ private:
         fillable.push_back("Name");
         fillable.push_back("Program");
         fillable.push_back("Father Name");
-        // fillable.push_back("father occupation");
-        // fillable.push_back("guardian name");
-        // fillable.push_back("guardian occupation");
-        // fillable.push_back("date of birth");
-        // fillable.push_back("nic");
-        // fillable.push_back("nationality");
-        // fillable.push_back("gender");
-        // fillable.push_back("blood group");
-        // fillable.push_back("passport number");
-        // fillable.push_back("permanent address");
-        // fillable.push_back("permanent city");
-        // fillable.push_back("email");
-        // fillable.push_back("phone");
+        fillable.push_back("Father Occupation");
+        fillable.push_back("Guardian Name");
+        fillable.push_back("Guardian Occupation");
+        fillable.push_back("Date Of Birth");
+        fillable.push_back("CNIC");
+        fillable.push_back("Nationality");
+        fillable.push_back("Gender");
+        fillable.push_back("Blood Group");
+        fillable.push_back("Passport Number");
+        fillable.push_back("Permanent Address");
+        fillable.push_back("Permanent City");
+        fillable.push_back("Email");
+        fillable.push_back("Phone");
     }
 
 public:
@@ -42,11 +41,8 @@ public:
 
         table = "students";
         setDirFile(table);
-        no_fill_able = 4;
+        no_fill_able = 17;
         setNoDataFields(no_fill_able);
         assignFillable();
     };
-    // ~StudentModel() {
-    //     return;
-    // };
 };
