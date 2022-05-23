@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Model.cpp"
+#include "./Model.cpp"
 
 using namespace std;
 
-class ProgramModel : virtual public Model
+class ProgramModel : public Model
 {
 protected:
     string table;

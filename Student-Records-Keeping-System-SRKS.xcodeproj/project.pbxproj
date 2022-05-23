@@ -7,15 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5641002A283B07C500E4162E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566EFB00282B4DA200D7C2BF /* main.cpp */; };
-		5641002D283B08F900E4162E /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5641002B283B08F900E4162E /* Model.cpp */; };
-		5641002F283B094800E4162E /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5641002E283B094800E4162E /* Course.cpp */; };
-		56410031283B099000E4162E /* CourseModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410030283B099000E4162E /* CourseModel.cpp */; };
-		56410035283B0A0E00E4162E /* ProgramModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410034283B0A0E00E4162E /* ProgramModel.cpp */; };
-		56410037283B0A8600E4162E /* login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410036283B0A8600E4162E /* login.cpp */; };
-		56410039283B0B0F00E4162E /* welcome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410038283B0B0F00E4162E /* welcome.cpp */; };
-		56410041283B0C0900E4162E /* Auth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5641003F283B0C0900E4162E /* Auth.cpp */; };
-		56410043283B0D3A00E4162E /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56410042283B0D3A00E4162E /* Program.cpp */; };
+		5641004F283B0FEF00E4162E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566EFB00282B4DA200D7C2BF /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +32,7 @@
 		56410038283B0B0F00E4162E /* welcome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = welcome.cpp; sourceTree = "<group>"; };
 		5641003F283B0C0900E4162E /* Auth.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Auth.cpp; sourceTree = "<group>"; };
 		56410042283B0D3A00E4162E /* Program.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = SOURCE_ROOT; };
+		56410053283B135200E4162E /* students.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = students.csv; sourceTree = "<group>"; };
 		566EFAFD282B4DA200D7C2BF /* Student-Records-Keeping-System-SRKS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Student-Records-Keeping-System-SRKS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566EFB00282B4DA200D7C2BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		566EFB13282B504000D7C2BF /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
@@ -139,6 +132,7 @@
 		56BC61A528345A27003F6ED2 /* database */ = {
 			isa = PBXGroup;
 			children = (
+				56410053283B135200E4162E /* students.csv */,
 			);
 			path = database;
 			sourceTree = "<group>";
@@ -193,7 +187,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					566EFAFC282B4DA200D7C2BF = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -223,15 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56410041283B0C0900E4162E /* Auth.cpp in Sources */,
-				56410039283B0B0F00E4162E /* welcome.cpp in Sources */,
-				5641002A283B07C500E4162E /* main.cpp in Sources */,
-				56410043283B0D3A00E4162E /* Program.cpp in Sources */,
-				56410035283B0A0E00E4162E /* ProgramModel.cpp in Sources */,
-				56410037283B0A8600E4162E /* login.cpp in Sources */,
-				5641002D283B08F900E4162E /* Model.cpp in Sources */,
-				56410031283B099000E4162E /* CourseModel.cpp in Sources */,
-				5641002F283B094800E4162E /* Course.cpp in Sources */,
+				5641004F283B0FEF00E4162E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +336,7 @@
 		566EFB05282B4DA200D7C2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +345,7 @@
 		566EFB06282B4DA200D7C2BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

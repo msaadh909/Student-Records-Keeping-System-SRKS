@@ -68,20 +68,14 @@ public:
             cout
                 << left
                 << setw(6)
-                << i
-                << left
-                << setw(20)
-                << row[0]
-                << left
-                << setw(20)
-                << row[1]
-                << left
-                << setw(20)
-                << row[2]
-                << left
-                << setw(20)
-                << row[3]
-                << endl;
+                << i;
+
+            for (int i = 0; i < no_data_fields; i++)
+            {
+                cout << left << setw(20) << row[i];
+            }
+
+            cout << endl;
 
             i++;
         }

@@ -14,24 +14,17 @@ public:
     }
     void fetch()
     {
-        cout << "Student::fetch()" << endl;
         cout
             << left
             << setw(6)
-            << "S.no."
-            << left
-            << setw(20)
-            << student_model.fillable[0]
-            << left
-            << setw(20)
-            << student_model.fillable[1]
-            << left
-            << setw(20)
-            << student_model.fillable[2]
-            << left
-            << setw(20)
-            << student_model.fillable[3]
-            << endl;
+            << "S.no.";
+
+        for (int i = 0; i < student_model.no_fill_able; i++)
+        {
+            cout << left << setw(20) << student_model.fillable[i];
+        }
+
+        cout << endl;
         student_model.get();
 
         cout << "Enter S.no. for more detial: ";

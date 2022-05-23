@@ -2,11 +2,11 @@
 #include <string>
 #include <vector>
 // #include "Model.cpp"
-#include "Model.hpp"
+#include "./Model.hpp"
 
 using namespace std;
 
-class CourseModel : virtual public Model
+class CourseModel : public Model
 {
 protected:
     string table;
