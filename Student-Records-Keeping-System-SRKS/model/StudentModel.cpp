@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "./Model.cpp"
+#include "./Model.hpp"
 
 using namespace std;
 

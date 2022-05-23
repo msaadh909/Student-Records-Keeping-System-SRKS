@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "../model/StudentModel.cpp"
 
 using namespace std;
@@ -8,24 +9,52 @@ class Student
 public:
     StudentModel student_model;
     int x;
-    Student()
+    void title(string text)
     {
-        // cout << "> Student" << endl;
+        int x = 20;
+        int loopTime = text.size() + (x * 2) - 2;
+        for (int i = 0; i < loopTime; i++)
+            cout << "=";
+
+        cout << endl
+             << "=========="
+             << setw(20)
+             << text
+             << setw(20)
+             << "=========="
+             << endl;
+
+        for (int i = 0; i < loopTime; i++)
+            cout << "=";
     }
     void fetch()
     {
-        cout
-            << left
-            << setw(6)
-            << "S.no.";
+        // cout
+        //     << left
+        //     << setw(6)
+        //     << "S.no.";
 
         for (int i = 0; i < student_model.no_fill_able; i++)
         {
-            cout << left << setw(20) << student_model.fillable[i];
+            cout << left << setw(18) << student_model.fillable[i];
         }
 
         cout << endl;
-        student_model.get();
+
+        vector<string> items;
+        items = student_model.get();
+
+        // cout
+        //     << left
+        //     << setw(6)
+        //     << i;
+
+        for (int i = 0; i < student_model.no_fill_able; i++)
+        {
+            cout << left << setw(18) << items[i];
+        }
+
+        cout << endl;
 
         cout << "Enter S.no. for more detial: ";
         cin >> x;

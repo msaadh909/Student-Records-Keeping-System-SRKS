@@ -2,65 +2,69 @@
 #include <string>
 #include "../lib/src/Auth.cpp"
 #include "../include/Student.cpp"
-// #include "../include/Program.cpp"
-// #include "../include/Course.cpp"
+#include "../include/Program.cpp"
+#include "../include/Course.cpp"
 
 using namespace std;
 
 void App()
 {
-    // Auth();
+    Auth();
 
     int feature;
 
 jump_feature:
-    cout << "Please Enter a number" << endl
-         << "1.  Logout" << endl
-         << "2.  Show all students" << endl
-         << "3.  Add new student" << endl
-         << "4.  Search student by Roll no." << endl
-         << "5.  Show Programs" << endl
-         << "6.  Add Program" << endl
-         << "7.  Show Course" << endl
-         << "8.  Add Course" << endl
-         << "Which action you want to do: ";
-
-    cin >> feature;
-
-    if (0 >= feature || feature >= 9)
+    while (1)
     {
-        goto jump_feature;
-    }
+        cout << endl
+             << "Please Enter a number" << endl
+             << "1. Logout" << endl
+             << "2. Show Students" << endl
+             << "3. Add Student" << endl
+             << "4. Search Student (by Roll no.)" << endl
+             << "5. Show Programs" << endl
+             << "6. Add Program" << endl
+             << "7. Show Course" << endl
+             << "8. Add Course" << endl
+             << "Which action you want to do: ";
 
-    Student student;
-    // Program program;
-    // Course course;
+        cin >> feature;
 
-    switch (feature)
-    {
-    case 1:
-        Auth(false);
-        break;
-    case 2:
-        student.fetch();
-        break;
-    case 3:
-        student.store();
-        break;
-    case 4:
-        cout << "4.  Search student by Roll no." << endl;
-        break;
-    case 5:
-        // program.fetch();
-        break;
-    case 6:
-        // program.store();
-        break;
-    case 7:
-        // course.fetch();
-        break;
-    case 8:
-        // course.store();
-        break;
+        if (0 >= feature || feature >= 9)
+        {
+            goto jump_feature;
+        }
+
+        Student student;
+        Program program;
+        Course course;
+
+        switch (feature)
+        {
+        case 1:
+            Auth(false);
+            break;
+        case 2:
+            student.fetch();
+            break;
+        case 3:
+            student.store();
+            break;
+        case 4:
+            cout << "4.  Search student by Roll no." << endl;
+            break;
+        case 5:
+            program.fetch();
+            break;
+        case 6:
+            program.store();
+            break;
+        case 7:
+            course.fetch();
+            break;
+        case 8:
+            course.store();
+            break;
+        }
     }
 }
