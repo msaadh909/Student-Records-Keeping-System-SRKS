@@ -1,12 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
-// #include "Model.cpp"
 #include "./Model.hpp"
 
 using namespace std;
 
-class CourseModel : virtual public Model
+class LeavesModel : virtual public Model
 {
 protected:
     string table;
@@ -14,21 +13,19 @@ protected:
 private:
     void assignFillable()
     {
-        fillable.push_back("Title");
-        fillable.push_back("Code");
-        fillable.push_back("Credit Hrs");
-        fillable.push_back("Semester");
-        fillable.push_back("Area");
+        fillable.push_back("Student_ID");
+        fillable.push_back("Course");
+        fillable.push_back("Date");
     }
 
 public:
     int no_fill_able;
     vector<string> fillable;
-    CourseModel()
+    LeavesModel()
     {
-        table = "courses";
+        table = "leaves";
         setDirFile(table);
-        no_fill_able = 5;
+        no_fill_able = 3;
         setNoDataFields(no_fill_able);
         assignFillable();
     };

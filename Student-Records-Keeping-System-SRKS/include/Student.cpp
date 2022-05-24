@@ -17,49 +17,73 @@ public:
             cout << "=";
 
         cout << endl
-             << "=========="
-             << setw(20)
+             << "==========="
+             << setw(x)
              << text
-             << setw(20)
-             << "=========="
+             << setw(x)
+             << "==========="
              << endl;
 
         for (int i = 0; i < loopTime; i++)
             cout << "=";
+
+        cout << endl;
     }
+
+    void header(vector<string> head, int no_head)
+    {
+        cout
+            << left
+            << setw(6)
+            << "S.no.";
+        for (int i = 0; i < no_head; i++)
+        {
+            cout << left << setw(18) << head[i];
+        }
+        cout << endl;
+    }
+
     void fetch()
     {
-        // cout
-        //     << left
-        //     << setw(6)
-        //     << "S.no.";
-
-        for (int i = 0; i < student_model.no_fill_able; i++)
-        {
-            cout << left << setw(18) << student_model.fillable[i];
-        }
-
-        cout << endl;
-
-        vector<string> items;
+        vector<vector<string> > items;
         items = student_model.get();
 
-        // cout
-        //     << left
-        //     << setw(6)
-        //     << i;
+        title("Show Students");
 
-        for (int i = 0; i < student_model.no_fill_able; i++)
+        // HEADER
+        header(student_model.fillable, student_model.no_fill_able);
+
+        // BODY
+        // cout << left
+        //          << setw(6)
+        //          << i;
+
+        for (int i = 0; i < items.size(); i++)
         {
-            cout << left << setw(18) << items[i];
+            cout << left
+                 << setw(6)
+                 << i;
+            for (int j = 0; j < student_model.no_fill_able; j++)
+            {
+                cout << left
+                     << setw(18)
+                     << items[i][j];
+            }
+            cout << endl;
         }
+        // for (int i = 0; i < student_model.no_fill_able; i++)
+        // {
+        //     cout << left
+        //          << setw(18)
+        //          << items[i];
+        // }
+        // cout << endl;
 
-        cout << endl;
-
-        cout << "Enter S.no. for more detial: ";
-        cin >> x;
-        show(x);
+        // cout << "Enter S.no. for more detial: ";
+        // cin >> x;
+        // show(x);
     }
+
     void store()
     {
         cout << "Student::store()" << endl;

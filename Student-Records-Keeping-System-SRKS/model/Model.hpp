@@ -34,7 +34,7 @@ public:
     {
         cout << 200 << endl;
     }
-    vector<string> get()
+    vector<vector<string> > get()
     {
         // File pointer
         fstream fin;
@@ -44,16 +44,14 @@ public:
 
         // Read the Data from the file
         // as String Vector
+        vector<vector<string> > matrix;
         vector<string> row;
         string line, word;
-        // int i = 1;
 
         // read an entire row and
         // store it in a string variable 'line'
         while (getline(fin, line))
         {
-            // row.clear();
-
             // used for breaking words
             stringstream s(line);
 
@@ -65,26 +63,13 @@ public:
                 // of a row to a vector
                 row.push_back(word);
             }
-
-            // cout
-            //     << left
-            //     << setw(6)
-            //     << i;
-
-            // for (int i = 0; i < no_data_fields; i++)
-            // {
-            //     cout << left << setw(20) << row[i];
-            // }
-
-            // cout << endl;
-
-            // i++;
+            matrix.push_back(row);
         }
 
         // Close the file
         fin.close();
 
-        return row;
+        return matrix;
     }
     void create(vector<string> fillable)
     {

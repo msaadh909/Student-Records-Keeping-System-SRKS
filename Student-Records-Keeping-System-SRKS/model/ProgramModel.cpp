@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class ProgramModel : public Model
+class ProgramModel : virtual public Model
 {
 protected:
     string table;

@@ -9,7 +9,7 @@ using namespace std;
 
 void App()
 {
-    Auth();
+    // Auth();
 
     int feature;
 
