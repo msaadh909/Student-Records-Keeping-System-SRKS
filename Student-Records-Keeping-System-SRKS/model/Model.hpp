@@ -19,7 +19,7 @@ protected:
 
     void setDirFile(string table)
     {
-        dif_file = "database/" + table + ".csv";
+        dif_file = "database/" + table + ".txt";
     }
 
     void setNoDataFields(int no_fill_able)
@@ -34,7 +34,7 @@ public:
     {
         cout << 200 << endl;
     }
-    vector<vector<string> > get()
+    vector<vector<string>> get()
     {
         // File pointer
         fstream fin;
@@ -44,7 +44,7 @@ public:
 
         // Read the Data from the file
         // as String Vector
-        vector<vector<string> > matrix;
+        vector<vector<string>> matrix;
         vector<string> row;
         string line, word;
 
@@ -52,6 +52,8 @@ public:
         // store it in a string variable 'line'
         while (getline(fin, line))
         {
+            row.clear();
+
             // used for breaking words
             stringstream s(line);
 

@@ -32,8 +32,6 @@ public:
     vector<string> fillable;
     StudentModel()
     {
-        cout << "StudentModel()" << endl;
-
         table = "students";
         setDirFile(table);
         no_fill_able = 12;

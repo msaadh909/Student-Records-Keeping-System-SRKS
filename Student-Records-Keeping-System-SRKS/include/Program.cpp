@@ -1,9 +1,10 @@
 #include <iostream>
 #include "../model/ProgramModel.cpp"
+#include "./Utilities.cpp"
 
 using namespace std;
 
-class Program
+class Program : public Utilities
 {
 public:
     ProgramModel program_model;

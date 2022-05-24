@@ -1,83 +1,41 @@
 #include <iostream>
 #include <iomanip>
 #include "../model/StudentModel.cpp"
+#include "./Utilities.cpp"
 
 using namespace std;
 
-class Student
+class Student : public Utilities
 {
 public:
     StudentModel student_model;
     int x;
-    void title(string text)
-    {
-        int x = 20;
-        int loopTime = text.size() + (x * 2) - 2;
-        for (int i = 0; i < loopTime; i++)
-            cout << "=";
-
-        cout << endl
-             << "==========="
-             << setw(x)
-             << text
-             << setw(x)
-             << "==========="
-             << endl;
-
-        for (int i = 0; i < loopTime; i++)
-            cout << "=";
-
-        cout << endl;
-    }
-
-    void header(vector<string> head, int no_head)
-    {
-        cout
-            << left
-            << setw(6)
-            << "S.no.";
-        for (int i = 0; i < no_head; i++)
-        {
-            cout << left << setw(18) << head[i];
-        }
-        cout << endl;
-    }
-
     void fetch()
     {
-        vector<vector<string> > items;
+        vector<vector<string>> items;
         items = student_model.get();
 
         title("Show Students");
 
         // HEADER
-        header(student_model.fillable, student_model.no_fill_able);
+        student_model.fillable.erase(student_model.fillable.begin() + 4);
+        student_model.fillable.erase(student_model.fillable.begin() + 4);
+        student_model.fillable.erase(student_model.fillable.begin() + 4);
+        student_model.fillable.erase(student_model.fillable.begin() + 4);
+        student_model.fillable.erase(student_model.fillable.begin() + 4);
+        student_model.fillable.erase(student_model.fillable.begin() + 4);
+        header(student_model.fillable, student_model.fillable.size());
 
         // BODY
-        // cout << left
-        //          << setw(6)
-        //          << i;
-
         for (int i = 0; i < items.size(); i++)
         {
-            cout << left
-                 << setw(6)
-                 << i;
+            cout << left << setw(6) << i + 1;
             for (int j = 0; j < student_model.no_fill_able; j++)
-            {
-                cout << left
-                     << setw(18)
-                     << items[i][j];
-            }
+                if (j != 4 && j != 5 && j != 6 && j != 7 && j != 8 && j != 9)
+                    cout << left << setw(20) << items[i][j];
+
             cout << endl;
         }
-        // for (int i = 0; i < student_model.no_fill_able; i++)
-        // {
-        //     cout << left
-        //          << setw(18)
-        //          << items[i];
-        // }
-        // cout << endl;
 
         // cout << "Enter S.no. for more detial: ";
         // cin >> x;
